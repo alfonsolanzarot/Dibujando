@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DibujoActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/lienzo"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/panel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/panel"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorPanelBotones"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+    
+    <Button
+        android:id="@+id/btn_azul"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/botonesPanel"
+        android:drawableLeft="@drawable/circulo_azul"
+        android:onClick="eventoClic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_verde"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/botonesPanel"
+        android:drawableLeft="@drawable/circulo_verde"
+        android:onClick="eventoClic"
+        app:layout_constraintStart_toEndOf="@+id/btn_azul"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_rojo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/botonesPanel"
+        android:drawableLeft="@drawable/circulo_rojo"
+        android:onClick="eventoClic"
+        app:layout_constraintStart_toEndOf="@+id/btn_verde"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_estrella"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/botonesPanel"
+        android:drawableLeft="@drawable/estrella"
+        android:onClick="eventoClic"
+        app:layout_constraintStart_toEndOf="@+id/btn_rojo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cara"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="@color/botonesPanel"
+        android:drawableRight="@drawable/cara"
+        android:onClick="eventoClic"
+        app:layout_constraintStart_toEndOf="@+id/btn_estrella"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_inicio"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorTitulo"
+        android:text="@string/botonInicio"
+        android:fontFamily="@font/danube_"
+        android:textSize="17sp"
+        android:onClick="eventoClic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_borrar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_azul" />
+
+    <Button
+        android:id="@+id/btn_borrar"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorTitulo"
+        android:onClick="eventoClic"
+        android:text="@string/botonBorrar"
+        android:fontFamily="@font/danube_"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_inicio"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cara" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

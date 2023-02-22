@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dibujando</string>
+    <string name="botonComenzar">Comenzar a dibujar</string>
+    <string name="botonInicio">Inicio</string>
+    <string name="botonBorrar">Borrar</string>
+</resources>

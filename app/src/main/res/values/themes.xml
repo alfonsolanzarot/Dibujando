@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Dibujando" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!--Pantalla completa-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <!--Estilo para el título de la aplicación-->
+    <style name="titulo" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--Tamaño de la letra-->
+        <item name="android:textSize">40sp</item>
+        <!--Color de la letra-->
+        <item name="android:textColor">@color/colorTitulo</item>
+    </style>
+</resources>
